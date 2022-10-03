@@ -35,5 +35,5 @@ const importData = async (): Promise<void> => {
 }
 
 AppDataSource.initialize()
- //.then(importData)
+ .then(importData)
  .then(() => console.log('imported successfully'));
