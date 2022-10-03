@@ -8,6 +8,6 @@ const apiServerPort = process.env.APP_PORT;
 
 AppDataSource.initialize().then(() => {
   initializeApiServer().listen(apiServerPort, () => {
-    return console.log(`API Server is listening at http://localhost:${port}`);
+    return console.log(`API Server is listening at http://localhost:${apiServerPort}`);
   });
 });
